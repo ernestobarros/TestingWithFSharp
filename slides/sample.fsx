@@ -1,7 +1,7 @@
 ﻿(**
-- title : FsReveal 
-- description : Introduction to FsReveal
-- author : Karlkim Suwanmongkol
+- title : TestingWithFSharp
+- description : Introduction to Testing with FSharp
+- author : Ernesto Barros
 - theme : Sky
 - transition : default
 
@@ -103,24 +103,6 @@ let prices = [|53000<dollar>;44000<dollar>;59000<dollar>;82000<dollar>|]
 
 ---
 
-#### Haskell
- 
-    [lang=haskell]
-    recur_count k = 1 : 1 : zipWith recurAdd (recur_count k) (tail (recur_count k))
-            where recurAdd x y = k * x + y
-
-    main = do
-      argv <- getArgs
-      inputFile <- openFile (head argv) ReadMode
-      line <- hGetLine inputFile
-      let [n,k] = map read (words line)
-      printf "%d\n" ((recur_count k) !! (n-1))
-
-
-*code from [NashFP/rosalind](https://github.com/NashFP/rosalind/blob/master/mark_wutka%2Bhaskell/FIB/fib_ziplist.hs)*
-
----
-
 ### SQL
  
     [lang=sql]
@@ -130,12 +112,6 @@ let prices = [|53000<dollar>;44000<dollar>;59000<dollar>;82000<dollar>|]
     where Id in (@Ids1, @Ids2, @Ids3)
 
 *sql from [Dapper](https://code.google.com/p/dapper-dot-net/)* 
-
-***
-
-**Bayes' Rule in LaTeX**
-
-$ \Pr(A|B)=\frac{\Pr(B|A)\Pr(A)}{\Pr(B|A)\Pr(A)+\Pr(B|\neg A)\Pr(\neg A)} $
 
 ***
 

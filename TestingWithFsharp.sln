@@ -28,6 +28,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "slides", "slides", "{4A18F1
 	ProjectSection(SolutionItems) = preProject
 		slides\custom.css = slides\custom.css
 		slides\index.md = slides\index.md
+		Notes1.txt = Notes1.txt
 		slides\sample.fsx = slides\sample.fsx
 	EndProjectSection
 EndProject

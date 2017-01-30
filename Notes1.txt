@@ -1,0 +1,39 @@
+(**
+- title : TestingWithFSharp
+- description : Introduction to Testing with FSharp
+- author : Ernesto Barros
+- theme : Sky
+- transition : default
+
+***
+
+### Difficulties with SOA Testing
+
+- Samples : General wisdom
+- Samples : Why it's hard
+- Samples : Unit testing vs End-to-End testing
+
+### FsCheck
+
+- Samples : Property-Based testing
+
+### End-to-End testing
+
+- Samples : CSV Type Provider
+- Samples : SQL database Type Provider
+
+### Security
+
+- Samples : KeePassLib
+
+### Canopy UI testing
+
+- Samples : without password
+
+### Organizing tests
+
+- Samples : xUnit, Unquote, Fucha, FsCheck
+- Samples : xUnit capturing output to Excel
+
+
+
