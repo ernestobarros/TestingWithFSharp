@@ -1,0 +1,34 @@
+
+An introduction to property based testing
+http://fsharpforfunandprofit.com/pbt/
+Slide 60
+
+Nice code sample
+http://blog.mavnn.co.uk/property-checking-start-challenge/
+
+Not watched
+https://vimeo.com/68383317
+https://channel9.msdn.com/Events/TechEd/NewZealand/2013/DEV306
+
+Watched
+https://vimeo.com/161995115
+
+Image about Functional Testing
+http://blog.mikaellundin.name/2015/06/04/property-based-testing-with-fsharp.html
+
+Images
+https://martinfowler.com/bliki/TestPyramid.html
+https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html
+
+Text used
+http://wso2.com/library/articles/2014/04/how-to-efficiently-test-service-oriented-architecture/
+
+PHILLIP TRELFORD'S ARRAY
+5 Lesser Known F# Testing Tools & Techniques
+http://trelford.com/blog/post/test5.aspx
+
+ExcelPackageF
+https://github.com/mikhail-aksenov/ExcelPackageF/blob/master/ExcelPackageF.Tests/Tests.fs#L58
+
+Not read
+http://blog.picklespro.com/2016/11/24/anatomy-of-a-gherkin.html

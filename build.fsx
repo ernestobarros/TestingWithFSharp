@@ -93,7 +93,7 @@ let socketHandler (webSocket : WebSocket) =
       let! refreshed =
         Control.Async.AwaitEvent(refreshEvent.Publish)
         |> Suave.Sockets.SocketOp.ofAsync 
-      do! webSocket.send Text (ASCII.bytes "refreshed") true
+      do! webSocket.send Text (ByteSegment (ASCII.bytes "refreshed")) true
   }
 
 let startWebServer () =
@@ -110,7 +110,7 @@ let startWebServer () =
     let serverConfig = 
         { defaultConfig with
            homeFolder = Some (FullName outDir)
-           bindings = [ HttpBinding.mkSimple HTTP "127.0.0.1" port ]
+           bindings = [ HttpBinding.createSimple HTTP "127.0.0.1" port ]
         }
     let app =
       choose [
@@ -118,13 +118,14 @@ let startWebServer () =
         Writers.setHeader "Cache-Control" "no-cache, no-store, must-revalidate"
         >=> Writers.setHeader "Pragma" "no-cache"
         >=> Writers.setHeader "Expires" "0"
-        >=> browseHome ]
+        >=> browseHome
+        ]
     startWebServerAsync serverConfig app |> snd |> Async.Start
-    Process.Start (sprintf "http://localhost:%d/index.html" port) |> ignore
+    Process.Start (sprintf "http://localhost:%d/testing-with-fsharp.html" port) |> ignore
 
 Target "GenerateSlides" (fun _ ->
     !! (slidesDir + "/**/*.md")
-      ++ (slidesDir + "/**/*.fsx")
+    ++ (slidesDir + "/**/*.fsx")
     |> Seq.map fileInfo
     |> Seq.iter generateFor
 )

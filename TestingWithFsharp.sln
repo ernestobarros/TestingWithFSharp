@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GettingStarted", "GettingStarted", "{302B5A4D-294D-4A60-9838-3BFB166A3AB8}"
 	ProjectSection(SolutionItems) = preProject
@@ -19,6 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "packages", "packages", "{E4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "fsreveal", "fsreveal", "{D3CF6CB0-BCFD-439C-A80B-A75A26253AC4}"
 	ProjectSection(SolutionItems) = preProject
+		slides\custom.css = slides\custom.css
 		packages\FsReveal\fsreveal\fsreveal.css = packages\FsReveal\fsreveal\fsreveal.css
 		packages\FsReveal\fsreveal\fsreveal.fsx = packages\FsReveal\fsreveal\fsreveal.fsx
 		packages\FsReveal\fsreveal\template.html = packages\FsReveal\fsreveal\template.html
@@ -26,10 +27,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "fsreveal", "fsreveal", "{D3
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "slides", "slides", "{4A18F150-29E9-42E5-9173-30B92D5D8E06}"
 	ProjectSection(SolutionItems) = preProject
-		slides\custom.css = slides\custom.css
 		slides\index.md = slides\index.md
 		Notes1.txt = Notes1.txt
+		NotesExternalSlides.txt = NotesExternalSlides.txt
 		slides\sample.fsx = slides\sample.fsx
+		slides\testing-with-fsharp.fsx = slides\testing-with-fsharp.fsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{39530027-F536-45EE-AA58-1222B8509550}"
+	ProjectSection(SolutionItems) = preProject
+		checkport.fsx = checkport.fsx
 	EndProjectSection
 EndProject
 Global
