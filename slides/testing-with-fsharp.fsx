@@ -42,8 +42,18 @@ The pyramid argues that you should do much more automated testing through unit t
 
 ---
 
+<div class='text-left'>
 ### Why it's hard
-todo
+Why it's difficult to test
+
+Manual testing requires knowledge about what can go wrong.
+You can't really isolate a problem - so you just work out scenarios - which can be difficult to predict.
+A lot of time is put in the readability of manual testing.
+When possible - testing edge cases should not be part of manual testing.
+Testing is no proof so it's very random and subjective, it has more todo with how much we trust our knowledge.
+
+When things get difficult we often skip testing and rely on code review and console testing.
+</div>
 
 ---
 
@@ -192,6 +202,9 @@ let executeWorkflow () =
 - Samples : CSV Type Provider
 - Samples : SQL database Type Provider
 
+' speaker note
+' C:\work\Fsharp\#10249
+
 ***
 
 ### Security
@@ -203,6 +216,9 @@ let executeWorkflow () =
 ### Canopy UI testing
 
 - Samples : without password
+
+' speaker note
+' C:\work\Fsharp\#10276
 
 ***
 
